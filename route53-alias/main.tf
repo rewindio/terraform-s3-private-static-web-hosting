@@ -2,7 +2,7 @@
 ################################################################################################################
 ## Create a Route53 ALIAS record to the S3 website hosting
 ################################################################################################################
-resource "aws_route53_record" "cdn-alias" {
+resource "aws_route53_record" "website-bucket-alias" {
   zone_id = "${var.route53_zone_id}"
   name    = "${var.full_domain}"
   type    = "A"
