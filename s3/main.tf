@@ -24,10 +24,5 @@ resource "aws_s3_bucket" "website_bucket" {
 
   force_destroy = "${var.force_destroy}"
 
-//  logging {
-  //    target_bucket = "${var.log_bucket}"
-  //    target_prefix = "${var.log_bucket_prefix}"
-  //  }
-
   tags = "${merge("${var.tags}",map("Name", "${var.full_domain}"))}"
 }

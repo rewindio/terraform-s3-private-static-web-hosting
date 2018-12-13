@@ -1,15 +1,6 @@
 ##################################################
 ## Variables
 ##################################################
-variable "aws_region" {
-  type    = "string"
-  default = "eu-west-1"
-}
-
-variable "deployer" {
-  type = "string"
-  default = ""
-}
 
 variable "force_destroy" {
   type = "string"
@@ -44,11 +35,3 @@ variable "tags" {
   description = "Optional Tags"
   default     = {}
 }
-
-
-//variable log_bucket {
-//  type = "string"
-//}
-//variable log_bucket_prefix {
-//  type = "string"
-//}
