@@ -30,6 +30,11 @@ variable error_document {
   default = "404.html"
 }
 
+variable "s3_logging_bucket" {
+  type = "string"
+  default = ""
+}
+
 variable "tags" {
   type        = "map"
   description = "Optional Tags"
