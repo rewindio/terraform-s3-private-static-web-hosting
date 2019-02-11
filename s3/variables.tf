@@ -30,7 +30,7 @@ variable error_document {
   default = "404.html"
 }
 
-variable "s3_logging_bucket" {
+variable "logging_bucket" {
   type = "string"
   default = ""
 }
