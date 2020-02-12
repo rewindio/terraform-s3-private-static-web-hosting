@@ -5,7 +5,7 @@
 data "template_file" "bucket_policy" {
   template = "${file("${path.module}/s3_ip_restrict_policy.json")}"
 
-  vars {
+  vars = {
     bucket = var.full_domain
     allowed_ip = var.allowed_ip
   }
